@@ -25,3 +25,8 @@ class Cart:
 
     def total_cost(self):
         return sum(item.cost for item in self.items)
+
+    def print_cart(self):
+        print("Cart contents:")
+        for item in self.items:
+            print(f"- {item.title} (${item.cost})")
